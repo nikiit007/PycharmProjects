@@ -156,6 +156,7 @@ def main(args):
     y.addnode(5)
     y.addnode(7)
     y.addnode(9)
+    print("making random")
 
     # printll(x.currentnode)
     # print("***")
