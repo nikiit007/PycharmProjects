@@ -1,21 +1,10 @@
-#!/usr/bin/env python3
+import datetime
 def main(args):
-    print(mult(9, 19))
-
-
-def mult(small, big):
-    if small > big:
-        big, small = small, big
-    if small == 0:
-        return 0
-    elif small == 1:
-        return big
+    if len(args)==0:
+        currdate=datetime.datetime.now()
     else:
-        s = small >> 1
-        if small % 2 == 0:
-            return mult(s, big) + mult(s, big)
-        else:
-            return mult(s, big) + mult(s, big) + big
+        currdate=args[0]
+    print(currdate)
 
 
 if __name__ == '__main__':
